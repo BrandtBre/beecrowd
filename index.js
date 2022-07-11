@@ -3,17 +3,8 @@ var lines = input.split('\n');
 
 const pegarValores = (line) => line.split(" ").map(a => Number(a));
 
-let [a, b, c] = pegarValores(lines.shift());
+let [x1, y1] = parseFloat(pegarValores(lines.shift()));
+let [x2, y2] = parseFloat(pegarValores(lines.shift()));
 
-let triangulo = ((a * c) / 2.0);
-let circulo = (3.14159 * (c * c));
-let trapezio = ((a + b) * c) / 2.0;
-let quadrado = (b * b)
-let retangulo = (a * b)
+let calculo = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 
-
-console.log(`TRIANGULO ${triangulo.toFixed(3)}`);
-console.log(`CIRCULO ${circulo.toFixed(3)}`);
-console.log(`TRAPEZIO ${trapezio.toFixed(3)}`);
-console.log(`QUADRADO ${quadrado.toFixed(3)}`);
-console.log(`RETANGULO ${retangulo.toFixed(3)}`);
