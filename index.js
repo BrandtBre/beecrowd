@@ -3,6 +3,14 @@ var lines = input.split('\n');
 
 const pegarValores = (line) => line.split(" ").map(a => Number(a));
 
-let x = Number(lines.shift());
-let hex = x.toString(16);
-console.log(hex.toUpperCase());
+let [a, b] = pegarValores(lines.shift());
+let contador = 0;
+
+for (let index = 0; index < a; index++) {
+  let [x, y] = pegarValores(lines.shift());
+  if (x == b && y == 0) {
+    contador++;
+  }
+  
+}
+console.log(contador);
