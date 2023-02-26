@@ -14,6 +14,6 @@ while (true) {
     console.log(`${vetor.join(" ")}`);
     vetor = []
   } else {
-    return
+    retur
   }
 }
